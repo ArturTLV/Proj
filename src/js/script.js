@@ -127,7 +127,45 @@
 //     console.log(--decr);
 //     console.log(59%4);
 
-const isChecked = false;
-const isClosed = false;
-const wasOpen = false;
-console.log(isChecked || isClosed || !wasOpen);
+// const isChecked = false;
+// const isClosed = false;
+// const wasOpen = false;
+// console.log(isChecked || isClosed || !wasOpen);
+
+
+
+let numberOfFilms = +prompt('How many moovies you have watched?', '');
+console.log(numberOfFilms)
+
+
+
+
+
+
+
+
+
+const personalMoovieDB = {
+      count: numberOfFilms,
+      moovies: {},
+      actors: {},
+      genres: [],
+      privat: false
+
+          };
+
+
+const a = prompt('Last moovie?', ''),
+      b = prompt('How do you rate it?', ''),
+      c = prompt('Last moovie?', ''),
+      d = prompt('How do you rate it?', '');
+
+      personalMoovieDB.moovies[a] = b;
+      personalMoovieDB.moovies[c] = d;
+
+      console.log(personalMoovieDB);
+
+// let lastMoovie = prompt('Last moovie?', '');
+// let rateMoovie = prompt('How do you rate it?', '');
+        
+// console.log(`${lastMoovie}: ${rateMoovie}`)
